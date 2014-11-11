@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="OZ">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>{% block title %}{% endblock %}Housing in Oz</title>
+
+	{% block css %}
+		<link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="/vendor/lightbox2/css/lightbox.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Kristi|Meie+Script' rel='stylesheet' type='text/css'>
+		<link href="/assets/css/main.css" rel="stylesheet" />
+	{% endblock %}
+
+</head>
+
+<body>
+
+	{% include 'templates/nav.html' %}
+
+	{% block content %}{% endblock %}
+
+
+	{% block js %}
+		<script src="/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/vendor/lightbox2/js/lightbox.min.js"></script>
+	{% endblock %}
+
+</body>
+</html>
